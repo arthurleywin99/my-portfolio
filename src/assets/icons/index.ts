@@ -1,0 +1,5 @@
+export { FacebookIcon } from './FacebookIcon'
+export { LinkedInIcon } from './LinkedInIcon'
+export { GithubIcon } from './GithubIcon'
+export { BuildingIcon } from './BuildingIcon'
+export { MapPinIcon } from './MapPinIcon'

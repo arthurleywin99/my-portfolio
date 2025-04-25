@@ -1,0 +1,6 @@
+export { HomePage } from './HomePage'
+export { AboutPage } from './AboutPage'
+export { TechnologiesPage } from './TechnologiesPage'
+export { ContactPage } from './ContactPage'
+export { ProjectsPage } from './ProjectsPage'
+export { NotFoundPage } from './NotFoundPage'
