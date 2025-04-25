@@ -46,7 +46,7 @@ const TechnologiesPage = () => {
               whileHover={{ scale: 1.1 }}
               className='p-3'
               key={index}
-              src={`src/assets/images/${tool}.svg`}
+              src={`../src/assets/images/${tool}.svg`}
               width={120}
             />
           ))}
@@ -60,7 +60,7 @@ const TechnologiesPage = () => {
               whileHover={{ scale: 1.1 }}
               className='p-3'
               key={index}
-              src={`src/assets/images/${tool}.svg`}
+              src={`../src/assets/images/${tool}.svg`}
               width={120}
             />
           ))}
