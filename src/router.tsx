@@ -35,11 +35,11 @@ const router = createBrowserRouter([
         Component: ProjectsPage,
         path: ERoute.PROJECTS,
       },
+      {
+        Component: NotFoundPage,
+        path: '*',
+      },
     ],
-  },
-  {
-    Component: NotFoundPage,
-    path: '*',
   },
 ])
 
