@@ -1,14 +1,14 @@
 {
   "name": "my-portfolio",
   "private": true,
-  "version": "0.0.0",
-  "homepage": "https://arthurleywin99.github.io/my-portfolio",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && echo 'www.it-portfolio.xyz' > dist/CNAME"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
