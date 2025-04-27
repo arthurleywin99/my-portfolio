@@ -60,26 +60,28 @@ const AboutPage = () => {
   return (
     <div>
       <section>
-        <h1 className='text-[40px] text-gray-300 font-bold'>About Me</h1>
-        <p className='text-[20px] text-gray-300 my-4'>
+        <h1 className='text-4xl max-md:text-3xl text-gray-300 font-bold'>About Me</h1>
+        <p className='text-2xl text-gray-300 my-4'>
           I am a frontend web developer, 2 years of experience in programming with good
           communication and quick learning skills.
         </p>
-        <p className='text-[20px] text-gray-300 my-4'>
+        <p className='text-2xl text-gray-300 my-4'>
           I specialize in building modern, responsive web applications using cutting-edge frontend
           technologies.
         </p>
       </section>
       <section className='my-18'>
-        <h1 className='text-[40px] text-gray-300 font-bold'>Working Experiences</h1>
+        <h1 className='text-4xl max-md:text-3xl text-gray-300 font-bold'>Working Experiences</h1>
         {workingExperiences.map((exp, index) => (
-          <div
-            key={index}
-            className='my-10 flex justify-between items-center pb-4 border-b-2 border-gray-500'
-          >
-            <div>
-              <h3 className='text-[20px] text-gray-300 font-bold'>{exp.title}</h3>
-              <div className='flex gap-8 items-center mt-4'>
+          <div key={index} className='my-10 pb-4 border-b-2 border-gray-500'>
+            <div className='flex justify-between items-center'>
+              <h3 className='text-2xl text-gray-300 font-bold'>{exp.title}</h3>
+              <span className='text-[14px] text-gray-300 text-end p-3 font-bold rounded-4xl bg-green-700 select-none'>
+                {exp.jobType}
+              </span>
+            </div>
+            <div className='flex flex-row max-sm:flex-col justify-between items-center max-sm:items-start'>
+              <div className='flex flex-row max-sm:flex-col gap-8 items-center max-sm:items-start mt-4'>
                 <div className='flex gap-2 items-center'>
                   <BuildingIcon />
                   <Link
@@ -96,26 +98,23 @@ const AboutPage = () => {
                   {exp.location}
                 </div>
               </div>
-            </div>
-            <div className='text-end'>
-              <span className='text-[14px] text-gray-300 text-end p-3 font-bold rounded-4xl bg-green-700 select-none'>
-                {exp.jobType}
-              </span>
               <p className='text-[16px] text-gray-300 mt-4'>{exp.duration}</p>
             </div>
           </div>
         ))}
       </section>
       <section className='my-18'>
-        <h1 className='text-[40px] text-gray-300 font-bold'>Education</h1>
+        <h1 className='text-4xl max-md:text-3xl text-gray-300 font-bold'>Education</h1>
         {educations.map((edu, index) => (
-          <div
-            key={index}
-            className='my-10 flex justify-between items-center pb-4 border-b-2 border-gray-500'
-          >
-            <div>
-              <h3 className='text-[20px] text-gray-300 font-bold'>{edu.major}</h3>
-              <div className='flex gap-8 mt-4'>
+          <div key={index} className='my-10 pb-4 border-b-2 border-gray-500'>
+            <div className='flex justify-between items-center'>
+              <h3 className='text-2xl text-gray-300 font-bold'>{edu.major}</h3>
+              <span className='text-[14px] text-gray-300 text-end p-3 font-bold rounded-4xl bg-green-700 select-none'>
+                {edu.type}
+              </span>
+            </div>
+            <div className='flex flex-row max-sm:flex-col justify-between items-center max-sm:items-start'>
+              <div className='flex flex-row max-sm:flex-col gap-8 items-center max-sm:items-start mt-4'>
                 <div className='flex gap-2 items-center'>
                   <BuildingIcon />
                   <Link
@@ -127,16 +126,11 @@ const AboutPage = () => {
                     {edu.name}
                   </Link>
                 </div>
-                <div className='flex gap-2 items-center text-[16px] text-gray-300'>
+                <div className='flex gap-2 items-center text-gray-300'>
                   <MapPinIcon />
                   {edu.location}
                 </div>
               </div>
-            </div>
-            <div className='text-end'>
-              <span className='text-[14px] text-gray-300 text-end p-3 font-bold rounded-4xl bg-green-700 select-none'>
-                {edu.type}
-              </span>
               <p className='text-[16px] text-gray-300 mt-4'>{edu.duration}</p>
             </div>
           </div>
