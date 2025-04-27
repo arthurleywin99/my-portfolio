@@ -22,7 +22,7 @@ const ContactPage = () => {
       variants={containerVariants}
       initial='hidden'
       animate='show'
-      className='h-full flex flex-col justify-center items-center text-[45px] text-white font-bold'
+      className='h-full flex flex-col justify-center items-center text-5xl max-sm:text-4xl gap-5 text-white font-bold'
     >
       <motion.h1 variants={itemVariants}>For any questions or contact for works</motion.h1>
       <motion.h1 variants={itemVariants}>Please drop a mail</motion.h1>
