@@ -34,12 +34,12 @@ const HomePage = () => {
   }, [])
 
   return (
-    <div className='h-full flex justify-between items-center'>
+    <div className='h-full flex flex-row max-md:flex-col justify-between max-md:justify-center gap-0 max-md:gap-7 items-center overflow-x-hidden'>
       <motion.div
         variants={containerVariants}
         initial='hidden'
         animate='show'
-        className='text-[40px] text-white font-bold'
+        className='text-[40px] max-md:text-[30px] text-left max-md:text-center text-white font-bold'
       >
         <motion.h1 variants={itemVariants} className='select-none'>
           Hi,👋
@@ -49,7 +49,7 @@ const HomePage = () => {
         </motion.h1>
         <motion.h1
           variants={itemVariants}
-          className='text-[40px] font-bold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent select-none'
+          className='font-bold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-clip-text text-transparent select-none'
         >
           Giang Bui
         </motion.h1>
@@ -59,12 +59,12 @@ const HomePage = () => {
       </motion.div>
       <div
         ref={avatarRef}
-        className='w-[270px] h-[270px] rounded-full border-4 border-x-blue-600 border-y-red-600 flex items-center justify-center select-none'
+        className='rounded-full border-4 border-x-blue-600 border-y-red-600 flex items-center justify-center select-none'
       >
         <img
           src='https://avatars.githubusercontent.com/u/86364279?v=4'
           alt='Giang Bui'
-          className='rounded-full w-[250px] h-[250px] object-cover'
+          className='rounded-full w-[250px] h-[250px] max-md:w-[190px] max-md:h-[190px] object-cover'
         />
       </div>
     </div>
